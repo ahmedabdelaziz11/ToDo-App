@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <dev class="container text-white">
+
+        <h1 class="text-center display-3 p-3">To Do App</h1>
+        <div class="row">
+            <div class="col-8 offset-sm-2">
+                <form action="" class="row" id="tasks-data">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Description</label>
+                            <input type="text" class="form-control" name="description" id="description">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block" type="submit">Add Task</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="error"></div>
+        <div class="row">
+            <h1 class="text-center display-4 my-3 col-12">All Tasks</h1>
+            <div class="col-10 mx-auto">
+                <table class="table table-bordered" id="tasks-table">
+                    <thead>
+                        <tr class="gr text-center">
+                            <td>Description</td>
+                            <td>Delete</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+                        <tr style="display: none;" id="clearAll">
+                            <td colspan="2">
+                                <button class="btn btn-danger btn-block" onclick="deleteAll()">Clear Tasks</button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+    </dev>
+
+
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
